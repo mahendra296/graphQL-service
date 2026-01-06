@@ -1,0 +1,14 @@
+extend type Query {
+    getAllAuthors: [Author]
+    getAuthorById(authorId: ID!): Author
+}
+
+extend type Mutation {
+    createAuthor(input: AuthorInput!): Author
+    deleteAuthor(id: ID!): Boolean
+}
+
+input AuthorInput {
+    name: String!
+    email: String
+}

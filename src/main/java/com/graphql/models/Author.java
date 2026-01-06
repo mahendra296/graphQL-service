@@ -5,16 +5,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "book")
+@Table(name = "author")
 @Data
 @NoArgsConstructor
-public class Book {
+public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
-    private String price;
-    private String authorId;
-    private String publishedDate;
+    private String name;
+    private String email;
 }

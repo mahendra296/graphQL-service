@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altair GraphQL Client</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .header {
+            background: #1a1a2e;
+            color: white;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        .header h1 { font-size: 16px; font-weight: 500; }
+        .header span { color: #888; font-size: 12px; }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 40px);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Altair GraphQL Client</h1>
+        <span>Endpoint: /graphql</span>
+    </div>
+    <iframe
+        src="https://web.altairgraphql.dev/?endpoint=http://localhost:8081/graphql"
+        allow="clipboard-read; clipboard-write">
+    </iframe>
+</body>
+</html>

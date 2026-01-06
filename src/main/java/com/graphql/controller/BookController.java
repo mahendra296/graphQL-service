@@ -13,21 +13,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class BookController {
 
-  private final BookService bookService;
+    private final BookService bookService;
 
-  @GetMapping("/hello")
-  public String hello() {
-    return "Hello";
-  }
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello";
+    }
 
-  @GetMapping("/getAllBook")
-  public List<Book> getAllBook() {
-    List<Book> allBooks = bookService.getAllBooks();
-    return allBooks;
-  }
+    @GetMapping("/getAllBook")
+    public List<Book> getAllBook() {
+        List<Book> allBooks = bookService.getAllBooks();
+        return allBooks;
+    }
 
-  @PostMapping("/saveBook")
-  public void saveBook(@RequestBody Book book) {
-    bookService.saveBook(book);
-  }
+    @PostMapping("/saveBook")
+    public void saveBook(@RequestBody Book book) {
+        bookService.saveBook(book);
+    }
 }
